@@ -1,64 +1,64 @@
 # Wool App
 
-A cross-platform mobile application built with Flutter as part of my app-development and AI-assisted building journey.
+A Flutter mobile application built for my mother to upload, organize, and manage a catalog of her handmade knitted items.
 
-> Note: This project was created using AI-assisted development (vibe coding) for ideation, implementation support, debugging, and iteration. It should not be described as an AI-powered application unless an AI feature is added to the product.
+> This project was built through an AI-assisted development workflow (vibe coding). It is not described as an AI-powered product because it does not currently provide an end-user AI feature.
 
 ## Overview
 
-Wool App is a Flutter-based mobile application developed to explore end-to-end app development, including user interfaces, navigation, media handling, local storage, and backend integration.
+Wool App is a catalog-management application for a handmade knitting business.
 
-The project is structured to run across Android, iOS, web, Windows, macOS, and Linux through Flutter.
+It gives the maker a simple way to create a digital collection of knitted products. She can upload product photos and maintain key details such as the item name, description, price, and availability.
+
+This was built as a practical family-use project while I explored AI-assisted mobile application development.
 
 ## Features
 
-- Cross-platform Flutter application
-- Multi-page navigation using `go_router`
-- Image selection using `image_picker`
-- Image caching with `cached_network_image`
-- Video playback support
-- Local preferences with `shared_preferences`
-- Local database support using SQLite
-- Backend integration with Supabase
-- Custom fonts, animations, and responsive UI components
+- Create and manage a catalog of handmade knitted items
+- Upload and display product images
+- Store item details such as name, description, price, and availability
+- Browse saved products in one organized place
+- Responsive, cross-platform Flutter application
+- Local storage and backend integration support
 
 ## Tech Stack
 
 - **Framework:** Flutter
 - **Language:** Dart
 - **Backend:** Supabase
-- **Database:** SQLite / `sqflite`
+- **Local Database:** SQLite using `sqflite`
 - **State Management:** Provider
 - **Routing:** go_router
-- **Media:** image_picker, video_player
-- **Storage:** shared_preferences, path_provider
-- **UI:** Google Fonts, Flutter Animate, Material Design
+- **Image Handling:** image_picker and cached_network_image
+- **Media:** video_player
+- **Local Storage:** shared_preferences and path_provider
+- **UI:** Material Design, Google Fonts, and Flutter Animate
 
 ## AI-Assisted Development
 
-This project was developed with AI-assisted coding workflows, also known as vibe coding.
+This application was created using an AI-assisted workflow, also called vibe coding.
 
-AI tools were used to support tasks such as:
+AI tools supported:
 
-- Generating and refining Flutter UI code
-- Troubleshooting implementation issues
-- Exploring package integrations
-- Improving code structure and development speed
-- Iterating on screens and user flows
+- UI generation and refinement
+- Flutter implementation guidance
+- Package integration and dependency troubleshooting
+- Debugging and improving code structure
+- Faster iteration on screens and user flows
 
-The application currently focuses on mobile app development rather than providing an AI-powered feature to end users.
+The app’s goal is catalog management for handmade products, not an AI feature for users.
 
 ## Getting Started
 
 ### Prerequisites
 
-Install the following:
+Install:
 
-- Flutter SDK (Dart SDK included)
+- Flutter SDK
 - Android Studio, Xcode, or another Flutter-supported development environment
 - A physical device or emulator
 
-Verify your Flutter setup:
+Check your Flutter installation:
 
 ```bash
 flutter doctor
@@ -69,13 +69,13 @@ flutter doctor
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/vedp9/ai-engineered-apps-journey.git
+git clone https://github.com/vedp9/vibe-coded-apps.git
 ```
 
-2. Navigate to this project folder:
+2. Move into the project folder:
 
 ```bash
-cd ai-engineered-apps-journey/wool_project
+cd vibe-coded-apps/wool_project
 ```
 
 3. Install dependencies:
@@ -84,7 +84,7 @@ cd ai-engineered-apps-journey/wool_project
 flutter pub get
 ```
 
-4. Run the app:
+4. Run the application:
 
 ```bash
 flutter run
@@ -95,25 +95,23 @@ flutter run
 ```text
 wool_project/
 ├── android/            # Android configuration
-├── assets/             # Images, videos, fonts, and other app assets
+├── assets/             # Images and static assets
 ├── ios/                # iOS configuration
-├── lib/
-│   ├── pages/          # Application screens
-│   └── main.dart       # Application entry point
-├── test/               # Flutter tests
+├── lib/                # Application source code
+├── test/               # Tests
 ├── web/                # Web configuration
-├── pubspec.yaml        # Packages and app configuration
+├── pubspec.yaml        # App dependencies and configuration
 └── README.md
 ```
 
 ## Future Improvements
 
-- Add a clearly defined product description and user problem
-- Add screenshots or a short demo video
-- Improve test coverage
-- Add environment-variable configuration for Supabase credentials
-- Add authentication and user profiles, if relevant
-- Add a real AI-powered feature, such as smart recommendations or an in-app assistant
+- Add authentication for catalog owners
+- Add product categories and search
+- Add edit and delete product functionality
+- Add a shareable public product catalog
+- Add screenshots and a short app demo
+- Store environment credentials securely using environment variables
 
 ## Author
 
